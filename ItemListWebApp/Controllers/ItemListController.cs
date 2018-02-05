@@ -11,7 +11,7 @@ namespace ItemListWebApp.Controllers
         {
             lock (ItemNamesLock)
             {
-                if (!itemName.Contains(itemName))
+                if (!ItemNames.Items.Contains(itemName))
                 {
                     ItemNames.Items.Add(itemName);
                 }
